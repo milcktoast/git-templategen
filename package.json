@@ -1,0 +1,9 @@
+{
+  "name": "git-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "bin": "./setup.sh",
+  "scripts": {},
+  "author": "",
+  "license": "ISC"
+}

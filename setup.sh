@@ -2,11 +2,16 @@
 
 NAME="$1"
 PROJECT_NAME="$2"
-REPO="git@github.com:jpweeks/${NAME}-boilerplate.git $PROJECT_NAME"
+REPO="git@github.com:jpweeks/${NAME}-boilerplate.git"
 
-git clone $REPO
+echo "Cloning $REPO ..."
+git clone $REPO $PROJECT_NAME
 cd $PROJECT_NAME
 
+echo "Setting up ..."
+find ./ -type f -exec sed -i '' -e "s/\<project-name\>/$PROJECT_NAME/g" {} \;
+
+echo "Initializing git ..."
 rm -rf .git
 git init
 git add .

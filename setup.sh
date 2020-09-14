@@ -9,7 +9,7 @@ git clone $REPO $PROJECT_NAME
 cd $PROJECT_NAME
 
 echo "Setting up ..."
-find ./ -type f -exec sed -i '' -e "s/\<project-name\>/$PROJECT_NAME/g" {} \;
+find ./ -type f -exec sed -i '' -e "s/__project-name__/$PROJECT_NAME/g" {} \;
 
 echo "Initializing git ..."
 rm -rf .git

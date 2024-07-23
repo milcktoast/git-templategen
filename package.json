@@ -1,9 +1,9 @@
 {
-  "name": "git-boilerplate",
+  "name": "git-templategen",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple template generator using git",
   "bin": "./setup.sh",
   "scripts": {},
-  "author": "",
+  "author": "Ash Weeks",
   "license": "ISC"
 }
